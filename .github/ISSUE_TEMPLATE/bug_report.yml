@@ -1,0 +1,65 @@
+name: Hata Bildirimi (Bug Report)
+description: SüperCan Co-op modunda karşılaştığınız bir hatayı veya senkronizasyon sorununu bildirin.
+title: "[Hata] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hata bildirirken oyun klasöründeki `LOG_TOPLA.bat` dosyasını çalıştırıp Masaüstü'nde oluşan anonim `.zip` dosyasını (SteamID, IP ve kullanıcı adınız otomatik gizlenir) bu konuya sürükleyip bırakmanız sorunu çözmemizi çok hızlandırır!
+
+  - type: input
+    id: version
+    attributes:
+      label: Mod Sürümü
+      description: Hangi Release sürümünü kullanıyorsunuz? İki oyuncu da aynı sürümde mi?
+      placeholder: "v1.0.0 (iki taraf da aynı)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: net_mode
+    attributes:
+      label: Bağlantı Modu
+      options:
+        - Steam (net=steam, F8 Lobi / Arkadaş)
+        - Yerel Ağ / LAN (net=udp)
+        - Tek PC Bölünmüş Ekran (net=udp)
+    validations:
+      required: true
+
+  - type: input
+    id: level
+    attributes:
+      label: Bölüm / Kısım
+      description: Sorun hangi haritada veya olayda yaşandı?
+      placeholder: "Örn: Orman 3. kısım köprü, Hangar D.E.V.E. Boss, Ana Menü..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Ne oldu ve ne olmasını bekliyordunuz?
+      description: Hem HOST hem P2 (Client) ekranında ne göründüğünü kısaca anlatın.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Tekrarlama Adımları
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log Dosyası (LOG_TOPLA.bat çıktısı)
+      description: Masaüstü'nde oluşan `SuperCan_Coop_Log_*.zip` dosyasını buraya sürükleyip bırakın.
+    validations:
+      required: false

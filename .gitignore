@@ -1,0 +1,27 @@
+# Oyun dosyalari ve ondan cikan her sey depoya GIRMEZ (telif + boyut)
+gamefiles/
+*.exe
+*.orig
+*.bin
+*.gen
+
+# Tum yerel calisma alani (build, release, vendor, testinstall, dump, ref, loglar, arsivler)
+local/
+
+# Harici referans deposu
+coop-anything/
+
+# Derlenmis binary ve kutuphaneler (GitHub Release .zip icinde paylasilir)
+*.dll
+*.lib
+*.exp
+*.obj
+*.pdb
+
+# Loglar, yedekler, arsivler
+*.log
+*.bak*
+*.zip
+*.rar
+*.7z
+coop.ini.splitscreen

@@ -1,0 +1,94 @@
+==============================================================================
+SÜPERCAN 1 CO-OP — STEAM TEST KONTROL LİSTESİ (2026-11-19)
+==============================================================================
+Oynarken aşağıdaki maddeleri sırayla deneyip yanındaki [ ] kutucuklarına
+[OK] (çalıştı) veya [X] (sorun var) yazabilirsiniz.
+Fark ettiğiniz her türlü detayı en alttaki "Ek Notlar:" kısmına ekleyin.
+
+Not: Steam'de kimin HOST olduğu sol alttaki Co-op HUD kartında ("HOST" / "P2")
+yazar (SteamID'si küçük olan oyuncu otomatik HOST, diğeri P2 olur).
+
+------------------------------------------------------------------------------
+1. BAĞLANTI, CO-OP HUD VE KISAYOLLAR (F5 / F9)
+------------------------------------------------------------------------------
+[ ] Sağ altta Modern Co-op HUD kartı görünüyor mu? (HOST / P2 rozeti, arkadaşın
+    Steam adı, 4 çubuklu ping sinyali + ms, Can ve Nano barları, mesafe/durum)
+[ ] Arkadaşın karakterinin başının üstünde ok uçlu isim etiketi görünüyor mu?
+[ ] Arkadaş ekran dışına çıktığında ekran kenarında 360° yön oku ve mesafe (m)
+    doğru yönü gösteriyor mu?
+[ ] F9 tuşuna basınca Co-op HUD gizlenip tekrar basınca açılıyor mu?
+[ ] F5 tuşuna basınca arkadaşın yanına ışınlanıyor mu ve üstte
+    "ARKADASIN YANINA ISINLANDIN!" bildirimi çıkıyor mu?
+
+------------------------------------------------------------------------------
+2. ARA SAHNE / DİYALOG GEÇME ('SCT1') VE 3D SES / MÜZİK ('SND1' & 'SMU1')
+------------------------------------------------------------------------------
+[ ] Bölüm başında harita yüklenirken kendi kendine sahte ESC / pause menüsü
+    açılmadan normal başlıyor mu?
+[ ] Gerçek bir ara sahnede veya diyalogda (en az yarım saniye geçtikten sonra)
+    bir oyuncu ESC'ye bastığında diğer oyuncuda da ara sahne/diyalog geçiliyor
+    ve "ARKADAS ARA SAHNEYI GECTI" bildirimi çıkıyor mu?
+[ ] Arkadaşın kılıç savurma, vuruş, zıplama, robot patlama gibi 3D sesleri
+    yakındayken duyuluyor mu?
+[ ] Düşman dalgası başladığında savaş müziği, alarm/Hangar bölgesinde 2. kanal
+    özel bölge/boss müziği iki oyuncuda da uyumlu çalıyor mu?
+
+------------------------------------------------------------------------------
+3. ÇEVRE ÇÖPLERİ, ELMASLAR VE ORTAK PUAN ('SIT3' & 'SST2')
+------------------------------------------------------------------------------
+[ ] Yerdeki çevre çöplerini (teneke, kutu vb.) herhangi biriniz vakumladığında
+    diğer oyuncunun ekranında da anında kayboluyor mu? (Uzaklaşıp yaklaşınca
+    tekrar görünmemeli)
+[ ] Elmas / bonus kutularını biriniz aldığında diğer oyuncuda da dönen elmas
+    tamamen kayboluyor mu ve sol üstteki Elmas sayısı ikinizde de eşit artıyor mu?
+[ ] Puan ve çöp sayaçları iki tarafta da eşit gidiyor mu?
+[ ] Nano barı (sağ üstteki mavi bar) her oyuncuda KENDİ vuruşuna/harcamasına
+    göre ayrı (bağımsız) çalışıyor mu?
+
+------------------------------------------------------------------------------
+4. DÜŞMAN SENKRONU, VURUŞLAR VE ROBOT ÇÖPÜ ('SCW3', 'SHT1', 'SPH1')
+------------------------------------------------------------------------------
+[ ] Düşman robotlar (GBR, ZBD, UCAN) ve taşıyıcı gemi (elektrik kubbesi dahil)
+    iki oyuncuda da aynı yerde ve akıcı görünüyor mu?
+[ ] Düşmanlar yalnızca Host'a değil, hangi oyuncu daha yakınsa ona dönüp
+    saldırıyor mu ve iki oyuncuya da hasar verebiliyor mu?
+[ ] P2 (Client) robotlara vurduğunda (D kombosu, 3. vuruş C, S ağır vuruş)
+    robotlar sarsılma/yaralanma animasyonu oynatıp can kaybediyor ve ölüyor mu?
+[ ] Ölen robottan düşen robot parçalarını (çöpleri) hem Host hem P2 sorunsuzca
+    vakumlayabiliyor mu?
+
+------------------------------------------------------------------------------
+5. ÖLÜM / CANLANMA (SEÇENEK A) VE GEÇ KATILIM / YENİDEN BAĞLANMA ('SSN1')
+------------------------------------------------------------------------------
+[ ] Bir oyuncunun canı 0'a indiğinde (veya suya/uçuruma düştüğünde) Game Over
+    ekranı AÇILMADAN arkadaşının yanında 100 HP + 3 sn dokunulmazlıkla
+    ("CANLANDIN! (3 SN DOKUNULMAZ)") yeniden canlanıyor mu?
+[ ] Oyunculardan biri oyundan çıkıp tekrar girdiğinde (veya haritaya sonradan
+    katıldığında) "YENIDEN BAGLANDI" çıkıp daha önce toplanmış çöpler/elmaslar,
+    puan ve köprü/alarm durumu otomatik eşitleniyor mu?
+
+------------------------------------------------------------------------------
+6. BÖLÜM İLERLEMESİ: KÖPRÜ, TARET, ALARM/LAZER, TÜNEL VE DEVE BOSS
+------------------------------------------------------------------------------
+[ ] 3. Kısım (Makara/Köprü): Kolları/makarayı biriniz kırdığında köprü ve kapı
+    iki oyuncuda da açılıp karşıya geçilebiliyor mu?
+[ ] Taramalı Taret (topgit): P2 taretle ateş ettiğinde düşmanlara hasar
+    veriyor mu?
+[ ] Alarm / Lazer / Silo: Lazerlerden geçince veya silo/kalkan aşaması
+    ilerleyince iki oyuncuda da alarm aşaması eşitleniyor mu?
+[ ] Tünel Geçişi (orman.wmb -> tunel.wmb): Bir oyuncu tünele girdiğinde ~2 sn
+    sonra diğer oyuncu da otomatik olarak tünel haritasına yükleniyor mu?
+[ ] Hangar / Deve Boss: 4 pilin ve Deve Boss'un canı iki oyuncunun ortak
+    vuruşlarıyla iniyor mu, piller patlayınca Hangar kapısı ikinizde de açılıyor mu?
+
+
+==============================================================================
+Ek Notlar:
+==============================================================================
+(Oynarken fark ettiğiniz hataları, takılmaları, grafik/ses tuhaflıklarını veya
+beğendiğiniz/değişmesini istediğiniz şeyleri buraya alt alta yazın; test
+bitince bu dosyayı ve iki PC'nin Game\coop_probe_*.log dosyasını paylaşın.)
+
+- 
+- 
+- 

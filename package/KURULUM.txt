@@ -1,0 +1,41 @@
+SüperCan 1 Co-op — Kurulum ve Kullanım Kılavuzu (v1.0.0)
+========================================================
+
+Paket içeriği
+  dinput8.dll                   Co-op mod DLL'i (32-bit x86)
+  steam_api.dll                 Steam P2P & Lobi kitaplığı (Steamworks.NET 2025.164.1 x86)
+  SuperCan_Coop_Oyna.bat        Özel Co-op Başlatıcı (doğrudan oyunu açar)
+  SuperCan_Coop_Baslatici.ps1   Özel Co-op Başlatıcı betiği
+  coop.ini                      Ayar dosyası (varsayılan: net=steam, window=full)
+  KUR.bat / kur.ps1             Tek tıkla kurulum (LAA yaması + .orig yedek + kısayol)
+  KALDIR.bat                    Tek tıkla kaldırma (orijinal supercan.exe geri yükler)
+  LOG_TOPLA.bat                 Anonim hata raporu (.zip) oluşturucu
+  guvenlik_duvari.bat           Yalnızca yerel ağ (udp) modu için UDP 27015 izni
+
+KURULUM / GÜNCELLEME (iki PC'de de aynı)
+1. SüperCan 1 klasörünü ayrı bir yere kopyala (ör. C:\SuperCanCoop). Orijinal kuruluma dokunma.
+2. KUR.bat'a çift tıkla ve kopyanın Game klasörünü (ör. C:\SuperCanCoop\Game) gir ya da sürükle-birak.
+3. ÖNEMLİ: İki PC'de de birebir AYNI sürümdeki dinput8.dll bulunmalıdır!
+
+OYNAMAK — İNTERNET / STEAM (net=steam, varsayılan)
+  - İkiniz Steam'de ARKADAŞ olmalısınız.
+  - Önce Steam'i aç ve giriş yap, sonra Masaüstü'ndeki "SuperCan Co-op" kısayolu veya
+    Game\SuperCan_Coop_Oyna.bat ile oyunu başlat.
+  - Steam'de "Spacewar oynuyor" görünürsün (Valve'ın ücretsiz test uygulaması, AppID 480 — normaldir).
+  - Oyun içinde F8'e basıp Steam Lobi & Davet Panelini aç, 1..8 tuşlarıyla arkadaşını davet et.
+  - İki oyuncu da aynı bölüme girince otomatik olarak buluşursunuz.
+
+OYNAMAK — YEREL AĞ / LAN (net=udp)
+  - Game\coop.ini içinde net=udp yap (gerekirse guvenlik_duvari.bat'ı yönetici olarak çalıştır).
+
+OYUN İÇİ KISAYOLLAR
+  - F8        : Steam Lobi & Arkadaş Davet Panelini aç / kapat
+  - F9        : Co-op HUD panelini gizle / göster
+  - F5        : Arkadaşının yanına ışınlan (1.5 sn dokunulmazlık, 2 sn bekleme)
+  - ESC       : Ara sahne veya diyalogda (>0.5 sn) iki oyuncuda birden ara sahneyi geç
+  - Ctrl + F9 : Geliştirici teşhis dökümü (log dosyasına yazar)
+
+KALDIRMA VE HATA BİLDİRİMİ
+  - Modu kaldırmak için KALDIR.bat'a çift tıkla (orijinal supercan.exe geri yüklenir).
+  - Hata bildirirken LOG_TOPLA.bat'a çift tıkla: Masaüstü'nde SteamID, IP ve kullanıcı adı
+    otomatik gizlenmiş bir .zip arşivi oluşur; bunu GitHub Issue'suna ekleyebilirsin.

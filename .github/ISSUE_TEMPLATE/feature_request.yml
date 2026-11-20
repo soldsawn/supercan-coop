@@ -1,0 +1,20 @@
+name: Özellik İsteği (Feature Request)
+description: SüperCan Co-op için yeni bir özellik veya iyileştirme önerin.
+title: "[Öneri] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Özellik Özeti
+      description: Ne eklenmesini veya iyileştirilmesini istiyorsunuz?
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Neden Faydalı Olur?
+      description: Bu özellik oyun deneyimini nasıl iyileştirir?
+    validations:
+      required: false
